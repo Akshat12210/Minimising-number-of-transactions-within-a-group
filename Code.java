@@ -1,16 +1,14 @@
 package Codes;
 import java.util.*;
 /*
- * Steps taken to solve this problem :- 
- * 1. Create a adjacency matrix which holds the information regarding who 
- * 	  owes how much money to whom
- * 2. Calculate the net amount for each member. 
- *    Subtracting the total of all debts from the total of all 
- *    credits gives the net amount for that member.
- * 3. Find the two people that have the most credit and the most debt.
- * 4. Find the minimum from both the values of max credit and max debt after 
- * 	  getting minimum value. Now the debt person pays this amount to the creditor
- *    and settle the transaction.
+ *  1. Create an adjacency matrix that holds the information 
+ *     regarding who owes how much money to whom.
+    2. Calculate the net amount for each member. 
+ 	   Subtracting the total of all debts from the 
+ 	   total of all credits gives the net amount for that member.
+    3. Find the two people that have the most credit and the most debt.
+    4. Find the minimum from both the values of max credit 
+       and max debt after getting the minimum value. Now the debt person pays this amount to the creditor and settles the transaction.
  */
 class MinimumTransaction{
 	//initialising matrix -> adjacency matrix and N -> number of person/vertices in the graph 
